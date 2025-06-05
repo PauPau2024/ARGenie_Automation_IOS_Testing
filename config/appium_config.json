@@ -1,0 +1,11 @@
+{
+    "platformName": "iOS",
+    "platformVersion": "16",
+    "deviceName": "iPhone 14 Pro Max",
+    "automationName": "XCUITest",
+    "app": "/home/sujal/Downloads/ARGenie.ipa",
+    "autoAcceptAlerts": true,
+    "connectHardwareKeyboard": true,
+    "newCommandTimeout": 3600
+    
+}

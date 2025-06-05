@@ -1,0 +1,12 @@
+{
+	"platformName": "iOS",
+	"appium:platformVersion": "16",
+	"appium:deviceName": "iPhone 14 Pro Max",
+	"appium:automationName": "XCUITest",
+	"appium:app":"bs://e0d9e2e3629faebff09cc4c1bf4466c7fc9be962",
+	"appium:includeSafariInWebviews": true,
+	"bstack:options": {"source": "appiumdesktop"},
+	"appium:newCommandTimeout": 3600,
+	"appium:connectHardwareKeyboard": true,
+    "appium:autoAcceptAlerts": true
+}
