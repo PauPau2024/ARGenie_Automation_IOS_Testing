@@ -1,4 +1,5 @@
 from utils.startup import is_correct_app_running,is_app_opened,get_main_tabs_status
+import pytest 
 
 def test_correct_app_running(driver):
     assert is_correct_app_running(driver), "Incorrect app is running or app failed to launch."

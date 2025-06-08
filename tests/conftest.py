@@ -30,3 +30,12 @@ def driver():
 
     # Clean up after test (quit the driver)
     quit_driver(driver)
+
+
+def pytest_collection_modifyitems(config, items):
+    """
+    Reorder collected items so that:
+      1) files are sorted alphabetically (so test_1_*.py comes before test_2_*.py)
+      2) within each file, tests run in source‐order (by line number)
+    """
+    items.sort(key=lambda item: item.location)
