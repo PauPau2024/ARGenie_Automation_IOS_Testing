@@ -86,3 +86,12 @@ def click_by_class_chain(driver, class_chain, timeout=10):
     except (NoSuchElementException, ElementNotInteractableException) as e:
         print(f"[ERROR] Could not tap '{class_chain}': {e}")
         return False    
+
+def perform_draw(driver,start_x, start_y, pause):
+    actions = ActionChains(driver)
+    actions.w3c_actions = ActionBuilder(driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
+    actions.w3c_actions.pointer_action.move_to_location(start_x, start_y)
+    actions.w3c_actions.pointer_action.pointer_down()
+    actions.w3c_actions.pointer_action.pause(pause)
+    actions.w3c_actions.pointer_action.release()
+    actions.perform()
