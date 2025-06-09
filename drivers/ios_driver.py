@@ -13,7 +13,7 @@ def load_capabilities_from_json(file_path):
         capabilities = json.load(file)
     return capabilities
 
-def create_ios_driver(appium_server_url, app_path, capabilities_file="config/ios_capabilities.json"):
+def create_ios_driver(appium_server_url, capabilities_file="config/ios_device_farm_capabilities.json"):
     """
     Creates and returns an Appium driver instance for iOS devices.
     """
@@ -21,7 +21,7 @@ def create_ios_driver(appium_server_url, app_path, capabilities_file="config/ios
     capabilities = load_capabilities_from_json(capabilities_file)
     
     # Set the app path dynamically (overwrite the app path from json if needed)
-    capabilities["appium:app"] = app_path
+    #capabilities["appium:app"] = app_path
     
     # Setup Appium options
     options = AppiumOptions()

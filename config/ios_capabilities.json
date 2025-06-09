@@ -8,5 +8,5 @@
 	"bstack:options": {"source": "appiumdesktop"},
 	"appium:newCommandTimeout": 3600,
 	"appium:connectHardwareKeyboard": true,
-    "appium:autoAcceptAlerts": true
+        "appium:autoAcceptAlerts": true
 }

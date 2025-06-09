@@ -23,7 +23,6 @@ def driver():
     # Initialize driver using values from env_config
     driver = create_ios_driver(
         appium_server_url=env_config["base_url"],  # Use the BrowserStack URL from config
-        app_path=env_config["app_url"]  # The app URL from config
     )
 
     yield driver  # This will make the driver available in the test

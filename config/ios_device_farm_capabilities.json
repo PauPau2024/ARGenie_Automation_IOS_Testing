@@ -1,0 +1,7 @@
+{
+        "platformName": "iOS",
+        "appium:deviceName": "ZD22224VV3",
+        "appium:automationName": "XCUITest",
+        "appium:connectHardwareKeyboard": true,
+        "appium:autoAcceptAlerts": true
+}
