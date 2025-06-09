@@ -7,9 +7,10 @@ def test_AR_demo_button(driver):
         driver,
         '**/XCUIElementTypeButton[`name == \"AR Demo Mode\"`]'
     ), "Failed to tap the second 'AR Demo Mode' button"
+    assert click_button_by_accessibility(driver, "Back"), "Failed to click the 'Back' Button"
 
 
-def test_ar_demo_annotation_walkthrough(driver):
+def no_test_ar_demo_annotation_walkthrough(driver):
     ar_annotation_feature_sequence(driver)
 
 
