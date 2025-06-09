@@ -1,9 +1,2 @@
-pytest ./tests/ \
-  --log-cli-level=INFO \
-  --log-file=reports/logs/pytest.log \
-  --junitxml=reports/xml/junit.xml \
-  --html=reports/html/report.html \
-  --self-contained-html \
-  --maxfail=5 \
-  --capture=tee-sys \
-  2>&1 | tee reports/console/console_output.txt
+python -m pytest ./tests/ --log-cli-level=INFO   --log-file=pytest.log   --junitxml=junit.xml   --html=report.html   --self-contained-html   --maxfail=5   --capture=tee-sys   2>&1 | tee console_output.txt
+
