@@ -36,8 +36,6 @@ APPPIUM-ANDROID-TEST-AUTOMATION/
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # Documentation
 ├── pytest.ini                  # Pytest configuration
-├── run_tests.py                # Script to execute tests
-├── test_resp.py, test_test.py # Placeholder/test scripts
 ```
 
 ## ⚙️ Installation
