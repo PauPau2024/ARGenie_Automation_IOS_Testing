@@ -1,10 +1,7 @@
-Great! Here's a clean and professional `README.md` template tailored for **Android Automation** using **Appium** and **pytest**, but I can adjust it based on your stack (e.g. if you use Java, Espresso, Robot Framework, etc.). You can copy and modify as needed:
 
----
+# Android Automation Testing Framework
 
-# 🤖 Android Automation Testing Framework
-
-## 📌 Overview
+## Overview
 
 This project provides an automated testing framework for Android applications using **Appium** and **Python (pytest)**. It allows developers and QA teams to write and run UI tests across real devices or emulators to ensure application quality.
 
@@ -13,7 +10,7 @@ This project provides an automated testing framework for Android applications us
 * **Language:** Python 3.x
 * **Framework:** Pytest
 * **Automation Tool:** Appium
-* **Device Support:** Android Emulators, Physical Devices, AWS Device Farm (optional)
+* **Device Support:** Android Emulators, Physical Devices, AWS Device Farm 
 * **Dependency Manager:** pip
 
 ## 📁 Project Structure
