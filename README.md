@@ -5,7 +5,7 @@
 
 This project provides an automated testing framework for Android applications using **Appium** and **Python (pytest)**. It allows developers and QA teams to write and run UI tests across real devices or emulators to ensure application quality.
 
-## 🧰 Tech Stack
+## Tech Stack
 
 * **Language:** Python 3.x
 * **Framework:** Pytest
@@ -13,20 +13,31 @@ This project provides an automated testing framework for Android applications us
 * **Device Support:** Android Emulators, Physical Devices, AWS Device Farm 
 * **Dependency Manager:** pip
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-android-automation/
-├── tests/                      # Test cases
-│   └── test_login.py
-├── config/                     # Config files (desired capabilities, environment, etc.)
-│   └── capabilities.json
-├── utils/                      # Helper functions and reusable modules
-│   └── driver_setup.py
-├── reports/                    # Test reports (e.g., Allure or HTML)
+APPPIUM-ANDROID-TEST-AUTOMATION/
+├── config/                     # Configuration files (e.g., Appium capabilities)
+├── drivers/                    # Driver setup and initialization
+│   └── android_driver.py
+├── driver_utils.py             # Utility functions for driver management
+├── reports/                    # Test execution reports
+│   └── logs/
+├── resources/                  # Test data and assets
+│   └── app/                    # APKs or app references
+│   └── screenshots/            # Screenshots captured during test runs
+├── tests/                      # Organized test cases
+│   ├── test_01_start_up.py
+│   ├── test_02_intro_slides.py
+│   ├── ...
+│   └── test_20_logout.py
+├── utils/                      # Helper modules and utilities
+├── conftest.py                 # Pytest fixture definitions
 ├── requirements.txt            # Python dependencies
-├── conftest.py                 # Pytest fixtures
-├── README.md                   # Project documentation
+├── README.md                   # Documentation
+├── pytest.ini                  # Pytest configuration
+├── run_tests.py                # Script to execute tests
+├── test_resp.py, test_test.py # Placeholder/test scripts
 ```
 
 ## ⚙️ Installation
