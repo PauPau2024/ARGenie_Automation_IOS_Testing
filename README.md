@@ -226,4 +226,4 @@ By following the instructions above, you can run automated tests across multiple
 
 ---
 
-Let me know if you need further clarifications or additional details in the documentation! // Give me al the headets 
+Let me know if you need further clarifications or additional details in the documentation! 
