@@ -85,15 +85,6 @@ APPPIUM-ANDROID-TEST-AUTOMATION/
 pytest -v tests/ --html=reports/report.html
 ```
 
-### On AWS Device Farm (Optional):
-
-* Upload your test package (e.g., as a `.zip`)
-* Use `cmd_line.txt` with:
-
-  ```bash
-  pytest tests/ --device-name "Samsung Galaxy S10" --platform-version "10"
-  ```
-
 ## Test Cases Explaination
 
 | **Test File**                                 | **Purpose / Description**                                                                                     |
@@ -120,31 +111,6 @@ pytest -v tests/ --html=reports/report.html
 | `test_20_logout.py`                           | Tests the logout functionality and ensures the session ends, redirecting to login/home.                       |
 
 
-## 📄 Reporting
+## Reporting
 
-* HTML Report:
-
-  ```bash
-  pytest --html=reports/report.html
-  ```
-* Allure support (optional):
-
-  ```bash
-  pytest --alluredir=allure-results
-  allure serve allure-results
-  ```
-
-## 🧠 Best Practices
-
-* Keep test data and locators separate
-* Use page object model (POM) for maintainability
-* Run tests on both emulators and real devices
-* Use CI tools (GitHub Actions, Jenkins) for scheduled runs
-
-## 📬 Contact
-
-For questions or support, feel free to open an [issue](https://github.com/your-username/android-automation/issues) or contact the maintainer.
-
----
-
-Would you like to include CI/CD instructions, support for multiple environments, or a sample `capabilities.json`?
+The Reports of the test cases on the devices will be stored within the reports/report.html section within the files.
