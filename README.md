@@ -43,7 +43,7 @@ APPPIUM-ANDROID-TEST-AUTOMATION/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/android-automation.git
+   git clone https://github.com/PauPau2024/ARGenie_Automation_IOS_Testing.git
    cd android-automation
    ```
 
@@ -77,12 +77,12 @@ APPPIUM-ANDROID-TEST-AUTOMATION/
    adb devices
    ```
 
-## ▶️ Running the Tests
+## Running the Tests
 
 ### Locally:
 
 ```bash
-pytest tests/ --html=reports/report.html
+pytest -v tests/ --html=reports/report.html
 ```
 
 ### On AWS Device Farm (Optional):
